@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>anna laura kamimura</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- fontes iguais ao coaglio -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Press+Start+2P&display=swap"
+    rel="stylesheet" />
+
+  <!-- se o seu CSS estiver em css/style.css, troque para href="css/style.css" -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="grain"></div>
+
+  <main class="frame">
+    <div class="main-grid" style="margin-bottom: 50px;">
+
+      <!-- COLUNA ESQUERDA: avatar + texto + how to find me + projects -->
+      <div class="left-column">
+
+        <!-- bloco do avatar + nome + tagline -->
+        <section class="profile">
+          <div class="skull-wrap">
+            <!-- seu avatar novo aqui -->
+            <img src="img/avatar.jpeg" alt="avatar Anna Laura Kamimura" class="skull" />
+          </div>
+
+          <div class="profile-text">
+            <span class="logo">Anna Laura Kamimura</span>
+            <span class="profile-role">cybersecurity · devops · devsecops</span>
+          </div>
+
+          <p class="profile-tagline">
+            tentando equilibrar <span>&lt;infra&gt;</span>,
+            <span>&lt;código&gt;</span> e <span>&lt;segurança&gt;</span>
+            para criar soluções mais seguras e eficientes.
+          </p>
+        </section>
+
+        <!-- how to find me -->
+        <section class="card" id="links">
+          <h2>how to find me</h2>
+          <ul class="link-list">
+            <li>
+              <a href="https://github.com/Aninhaskm" target="_blank" rel="noreferrer">
+                github
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/annakamimura" target="_blank" rel="noreferrer">
+                linkedin
+              </a>
+            </li>
+            <li>
+              <a href="mailto:annalauraskamimura@gmail.com" target="_blank" rel="noreferrer">
+                e-mail
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- projects (agora na coluna esquerda, embaixo do how to find me) -->
+        <section class="card" id="projects">
+          <h2>Projects</h2>
+          <ul class="project-list">
+            <li>
+              <span class="project-name">pipeline devsecops (wip)</span>
+              <span class="project-desc">
+                pipeline de <strong>ci/cd</strong> com análise estática, testes e checks de segurança integrados.
+              </span>
+            </li>
+            <li>
+              <span class="project-name">python infra automations</span>
+              <span class="project-desc">
+                scripts em <strong>python</strong> pra automatizar tarefas de infraestrutura e coleta de logs / métricas.
+              </span>
+            </li>
+            <li>
+              <span class="project-name">tryhackme notes</span>
+              <span class="project-desc">
+                repositório/website com anotações de labs, cheatsheets e comandos úteis de blue/red team.
+              </span>
+            </li>
+            <li>
+              <span class="project-name">este portfólio</span>
+              <span class="project-desc">
+                página estática feita em <strong>html + css</strong> inspirada em sites minimalistas do mundo cyber.
+              </span>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- COLUNA DIREITA: certs + now em cima, depois skills, depois badges -->
+      <div class="right-column">
+
+        <!-- linha de cima: certs (esquerda) + now (direita) -->
+        <div class="grid-top">
+          <section class="card" id="certs">
+            <h2>Certifications</h2>
+
+            <div class="cert-item">
+              <div class="cert-logo"></div>
+
+              <div class="cert-meta">
+                <span class="cert-name">CJCA – HTB Certified Junior Cybersecurity Analyst</span>
+                <div class="cert-progress-row">
+                  <div class="cert-progress-bar">
+                    <div class="cert-progress-fill"></div>
+                  </div>
+                  <span class="cert-progress-text" id="cert-progress-text">0%</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="card now" id="now">
+            <h2>Now</h2>
+            <p>
+              analista de infraestrutura jr focada em <strong>cibersegurança</strong>,
+              <strong>devops</strong> e <strong>devsecops</strong>. estudando labs práticos
+              (TryHackMe) e fortalecendo base em redes, linux, web e segurança de aplicações.
+            </p>
+          </section>
+        </div>
+
+        <!-- linha do meio: skills (full width) -->
+        <section class="card" id="skills">
+          <h2>Skills</h2>
+          <ul class="skill-list">
+            <li>
+              <strong>languages:</strong> python, javascript, typescript, conceitos de C / Java / C# / C++.
+            </li>
+            <li>
+              <strong>infra &amp; devops:</strong> docker, git/github, pipelines de ci/cd, automações, fundamentos de cloud.
+            </li>
+            <li>
+              <strong>security:</strong> blue team / red team (fundamentos), owasp top 10 (conceitos), devsecops, iac
+              security, security in the pipeline, incident response.
+            </li>
+            <li>
+              <strong>fundamentals:</strong> redes, linux, como a web funciona, bancos de dados (conceitos), segurança de software.
+            </li>
+            <li>
+              <strong>ways of working:</strong> scrum, itil, boas práticas de documentação e colaboração em time.
+            </li>
+          </ul>
+        </section>
+
+        <!-- linha de baixo: badges (full width, com scroll interno) -->
+        <section class="card" id="htb-badges">
+          <h2>Badges</h2>
+
+          <div class="badges-container">
+            <!-- TryHackMe / Learning -->
+            <h3 class="badge-section-label">TryHackMe · Learning Milestones</h3>
+
+            <div class="badge-card">
+              <img src="https://tryhackme.com/img/badges/streak30.svg" alt="30 day streak badge" />
+              <span>30 day streak</span>
+            </div>
+
+            <div class="badge-card">
+              <img src="https://tryhackme.com/img/badges/firstfour.svg" alt="first four badge" />
+              <span>first four rooms</span>
+            </div>
+
+            <div class="badge-card">
+              <img src="https://tryhackme.com/img/badges/streak7.svg" alt="7 day streak badge" />
+              <span>7 day streak</span>
+            </div>
+
+            <div class="badge-card">
+              <img src="https://tryhackme.com/img/badges/streak3.svg" alt="3 day streak badge" />
+              <span>3 day streak</span>
+            </div>
+
+            <div class="badge-card">
+              <img src="https://tryhackme.com/img/badges/league-silver.svg" alt="silver league badge" />
+              <span>silver league</span>
+            </div>
+
+            <!-- Blue Teaming -->
+            <h3 class="badge-section-label">TryHackMe · Blue Teaming Milestones</h3>
+
+            <div class="badge-card">
+              <img src="https://tryhackme.com/img/badges/iacsecurity.svg" alt="iac security badge" />
+              <span>iac security</span>
+            </div>
+
+            <div class="badge-card">
+              <img src="https://tryhackme.com/img/badges/securityinthepipeline.svg" alt="security in the pipeline badge" />
+              <span>security in the pipeline</span>
+            </div>
+
+            <div class="badge-card">
+              <img src="https://tryhackme.com/img/badges/managingincidents.svg" alt="managing incidents badge" />
+              <span>managing incidents</span>
+            </div>
+
+            <div class="badge-card">
+              <img src="https://tryhackme.com/img/badges/networkandsystemsecurity.svg" alt="network and system security badge" />
+              <span>network &amp; system security</span>
+            </div>
+
+            <div class="badge-card">
+              <img src="https://tryhackme.com/img/badges/introtodevsecops.svg" alt="intro to devsecops badge" />
+              <span>intro to devsecops</span>
+            </div>
+
+            <div class="badge-card">
+              <img src="https://tryhackme.com/img/badges/shieldapprentice.svg" alt="shield apprentice badge" />
+              <span>shield apprentice</span>
+            </div>
+
+            <!-- Red Teaming -->
+            <h3 class="badge-section-label">TryHackMe · Red Teaming Milestones</h3>
+
+            <div class="badge-card">
+              <img src="https://tryhackme.com/img/badges/metasploit.svg" alt="metasploit badge" />
+              <span>metasploit</span>
+            </div>
+
+            <div class="badge-card">
+              <img src="https://tryhackme.com/img/badges/owasptop10.svg" alt="owasp top 10 badge" />
+              <span>owasp top 10</span>
+            </div>
+
+            <div class="badge-card">
+              <img src="https://tryhackme.com/img/badges/blue.svg" alt="blue badge" />
+              <span>blue (eternalblue)</span>
+            </div>
+
+            <div class="badge-card">
+              <img src="https://tryhackme.com/img/badges/softwaresecurity.svg" alt="software security badge" />
+              <span>software security</span>
+            </div>
+
+            <!-- Foundations -->
+            <h3 class="badge-section-label">TryHackMe · Foundations Milestones</h3>
+
+            <div class="badge-card">
+              <img src="https://tryhackme.com/img/badges/networkfundamentals.svg" alt="network fundamentals badge" />
+              <span>network fundamentals</span>
+            </div>
+
+            <div class="badge-card">
+              <img src="https://tryhackme.com/img/badges/howthewebworks.svg" alt="how the web works badge" />
+              <span>how the web works</span>
+            </div>
+
+            <div class="badge-card">
+              <img src="https://tryhackme.com/img/badges/webbed.svg" alt="webbed badge" />
+              <span>webbed</span>
+            </div>
+
+            <div class="badge-card">
+              <img src="https://tryhackme.com/img/badges/linux.svg" alt="linux badge" />
+              <span>linux (cat linux.txt)</span>
+            </div>
+
+            <div class="badge-card">
+              <img src="https://tryhackme.com/img/badges/swordapprentice.svg" alt="sword apprentice badge" />
+              <span>sword apprentice</span>
+            </div>
+
+            <div class="badge-card">
+              <img src="https://tryhackme.com/img/badges/careerready.svg" alt="cyber ready badge" />
+              <span>cyber ready</span>
+            </div>
+
+            <!-- Misc -->
+            <h3 class="badge-section-label">TryHackMe · Miscellaneous</h3>
+
+            <div class="badge-card">
+              <img src="https://tryhackme.com/img/badges/threatsandrisks.svg" alt="threats and risks badge" />
+              <span>threats &amp; risks</span>
+            </div>
+
+            <div class="badge-card">
+              <img src="https://tryhackme.com/img/badges/introtosecurityengineering.svg"
+                alt="intro to security engineering badge" />
+              <span>intro to security engineering</span>
+            </div>
+
+            <div class="badge-card">
+              <img src="https://tryhackme.com/img/badges/hack2win.svg" alt="hack2win badge" />
+              <span>hack2win 2025</span>
+            </div>
+
+            <!-- Hack The Box -->
+            <h3 class="badge-section-label">Hack The Box</h3>
+            <p class="badge-note">
+              htb badges em breve — assim que eu avançar na academia do
+              <strong>Hack The Box</strong>, eles aparecem aqui também.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer class="foot">
+      <p>&copy; <span id="year"></span> Anna Laura Kamimura. built with plain html + css.</p>
+    </footer>
+  </main>
+
+  <!-- scripts simples: ano + progresso da cert -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const DEFAULT_CERT_PROGRESS = 0; // muda pra 10, 25, 50 etc quando for avançando
+
+    function applyCertProgress(pct) {
+      const clean = Math.max(0, Math.min(100, Number(pct) || 0));
+      document.documentElement.style.setProperty("--cert-progress", clean + "%");
+      const textEl = document.getElementById("cert-progress-text");
+      if (textEl) textEl.textContent = clean + "%";
+    }
+
+    applyCertProgress(DEFAULT_CERT_PROGRESS);
+  </script>
+</body>
+
+</html>
