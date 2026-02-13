@@ -340,7 +340,7 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  padding: 0.1rem 0.6rem 0.15rem 0.5rem;
+  padding: 0.1rem 0.8rem 0.15rem 0.7rem;
   border-radius: 999px;
   background: rgba(15, 23, 42, 0.75);
   border: 1px solid rgba(148, 163, 184, 0.35);
@@ -348,6 +348,8 @@ p {
 
 .card h2::before {
   content: "";
+  display: inline-block;        /* garante que o dot sempre apareça */
+  flex-shrink: 0;
   width: 8px;
   height: 8px;
   border-radius: 999px;
@@ -767,12 +769,6 @@ p {
   text-align: left;
 }
 
-/* dá folga pro “balão” certifications não parecer cortado */
-#certs.card h2 {
-  padding-right: 1rem;
-  max-width: 100%;
-}
-
 /* ===== skills & projects ===== */
 
 .skill-list,
@@ -857,7 +853,7 @@ p {
   transform: translateX(2px);
 }
 
-/* ===== logos CJCA / CPTS (mantém os artes) ===== */
+/* ===== logos CJCA / CPTS (mantém os artes, usado nas divs de logo) ===== */
 
 .cert-logo {
   position: relative;
@@ -922,7 +918,6 @@ p {
   .hero {
     flex-direction: column;
     gap: 1.2rem;
-    margin-bottom: 2.2rem;
   }
 
   .logo {
@@ -991,4 +986,3 @@ p {
     font-size: 0.78rem;
   }
 }
-
