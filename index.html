@@ -1,362 +1,166 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8" />
-  <title>anna laura kamimura</title>
+  <title>Anna Laura Kamimura</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- fontes iguais ao coaglio -->
-  <link
-  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@600;700&display=swap"
-  rel="stylesheet"
-/>
-
-<link rel="icon" type="image/png" href="img/favicon_kamimura_bigger.png" />
-
-  <!-- CSS principal -->
+  <meta name="description" content="Portfólio de Anna Laura Kamimura, analista de sistemas formada em Análise e Desenvolvimento de Sistemas, com foco em cibersegurança e DevSecOps." />
+  <link rel="icon" type="image/png" href="img/favicon_kamimura_bigger.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600&family=Syne:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
-  <div class="grain"></div>
+  <a class="skip" href="#agora">ir para o conteúdo</a>
 
-  <main class="frame">
-    <div class="main-grid" style="margin-bottom: 50px;">
-
-      <!-- COLUNA ESQUERDA: avatar + texto + how to find me + projects -->
-      <div class="left-column">
-
-        <!-- bloco do avatar + nome + tagline -->
-        <section class="profile">
-          <div class="skull-wrap">
-            <img src="img/avatar.jpeg" alt="avatar Anna Laura Kamimura" class="skull" />
-          </div>
-        
-          <span class="jp-stamp">かみむら</span>
-        
-          <div class="profile-text">
-            <span class="logo">Anna Laura Kamimura</span>
-            <span class="profile-role">cybersecurity · devsecops</span>
-          </div>
-        
-          <p class="profile-tagline">
-            tentando equilibrar <span>&lt;infra&gt;</span>,
-            <span>&lt;código&gt;</span> e <span>&lt;segurança&gt;</span>
-            para criar soluções mais seguras e eficientes.
-          </p>
-        </section>
-        
-        <!-- how to find me -->
-        <section class="card" id="links">
-          <h2>how to find me</h2>
-          <ul class="link-list">
-            <li>
-              <a href="https://github.com/Aninhaskm" target="_blank" rel="noreferrer">
-                github
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/annakamimura" target="_blank" rel="noreferrer">
-                linkedin
-              </a>
-            </li>
-            <li>
-              <a href="mailto:annalauraskamimura@gmail.com" target="_blank" rel="noreferrer">
-                e-mail
-              </a>
-            </li>
-          </ul>
-        </section>
-
-        <!-- projects -->
-        <section class="card" id="projects">
-          <h2>projects</h2>
-          <ul class="project-list">
-            <li>
-              <span class="project-name">pipeline devsecops (wip)</span>
-              <span class="project-desc">
-                pipeline de <strong>ci/cd</strong> com análise estática, testes e checks de segurança integrados.
-              </span>
-            </li>
-            <li>
-              <span class="project-name">python infra automations</span>
-              <span class="project-desc">
-                scripts em <strong>python</strong> pra automatizar tarefas de infraestrutura e coleta de logs / métricas.
-              </span>
-            </li>
-            <li>
-              <span class="project-name">tryhackme notes</span>
-              <span class="project-desc">
-                repositório/website com anotações de labs, cheatsheets e comandos úteis de blue/red team.
-              </span>
-            </li>
-            <li>
-              <span class="project-name">este portfólio</span>
-              <span class="project-desc">
-                página estática feita em <strong>html + css</strong> inspirada em sites minimalistas do mundo cyber.
-              </span>
-            </li>
-          </ul>
-        </section>
-      </div>
-
-      <!-- COLUNA DIREITA: certs + now em cima, depois skills, depois badges -->
-      <div class="right-column">
-
-        <!-- linha de cima: certs (esquerda) + now (direita) -->
-        <div class="grid-top">
-          <section class="card" id="certs">
-            <h2>Certs</h2>
-
-            <!-- CJCA -->
-            <div class="cert-item">
-              <div class="cert-logo cjca"></div>
-
-              <div class="cert-meta">
-                <span class="cert-name">CJCA – Certified Junior Cybersecurity Analyst</span>
-
-                <div class="cert-progress" data-progress="17">
-                  <div class="cert-progress-bar">
-                    <div class="cert-progress-fill"></div>
-                  </div>
-                  <span class="cert-progress-text"></span>
-                </div>
-              </div>
-            </div>
-
-            <!-- CPTS -->
-            <div class="cert-item">
-              <div class="cert-logo cpts"></div>
-
-              <div class="cert-meta">
-                <span class="cert-name">CPTS – Certified Penetration Testing Specialist</span>
-
-                <div class="cert-progress" data-progress="6.3">
-                  <div class="cert-progress-bar">
-                    <div class="cert-progress-fill"></div>
-                  </div>
-                  <span class="cert-progress-text"></span>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="card now" id="now">
-            <h2>now</h2>
-            <p>
-              analista de infraestrutura jr focada em <strong>cibersegurança</strong>
-               e <strong>devsecops</strong>. estudando labs práticos
-              (HackTheBox) e fortalecendo base em desenvolvimento, segurança de aplicações e Red Team.
-            </p>
-          </section>
-        </div>
-
-        <!-- linha do meio: skills (full width) -->
-        <section class="card" id="skills">
-          <h2>skills</h2>
-          <ul class="skill-list">
-            <li>
-              <strong>languages:</strong> python, javascript, typescript, conceitos de C / Java / C# / C++.
-            </li>
-            <li>
-              <strong>infra &amp; devops:</strong> docker, git/github, pipelines de ci/cd, automações, fundamentos de cloud.
-            </li>
-            <li>
-              <strong>security:</strong> blue team / red team (fundamentos), owasp top 10 (conceitos), devsecops, iac
-              security, security in the pipeline, incident response.
-            </li>
-            <li>
-              <strong>fundamentals:</strong> redes, linux, como a web funciona, bancos de dados (conceitos), segurança de software.
-            </li>
-            <li>
-              <strong>ways of working:</strong> scrum, itil, boas práticas de documentação e colaboração em time.
-            </li>
-          </ul>
-        </section>
-
-        <!-- linha de baixo: badges (full width, com scroll interno) -->
-        <section class="card" id="htb-badges">
-          <h2>badges</h2>
-
-          <div class="badges-container">
-            <!-- TryHackMe / Learning -->
-            <h3 class="badge-section-label">TryHackMe · Learning Milestones</h3>
-
-            <div class="badge-card">
-              <img src="https://assets.tryhackme.com/img/badges/streak30.png" alt="30 day streak badge" />
-              <span>30 day streak</span>
-            </div>
-
-            <div class="badge-card">
-              <img src="https://assets.tryhackme.com/img/badges/firstfour.png" alt="first four badge" />
-              <span>first four rooms</span>
-            </div>
-
-            <div class="badge-card">
-              <img src="https://assets.tryhackme.com/img/badges/streak7.png" alt="7 day streak badge" />
-              <span>7 day streak</span>
-            </div>
-
-            <div class="badge-card">
-              <img src="https://assets.tryhackme.com/img/badges/streak3.png" alt="3 day streak badge" />
-              <span>3 day streak</span>
-            </div>
-
-            <div class="badge-card">
-              <img src="https://assets.tryhackme.com/img/badges/league-silver.png" alt="silver league badge" />
-              <span>silver league</span>
-            </div>
-
-            <!-- Blue Teaming -->
-            <h3 class="badge-section-label">TryHackMe · Blue Teaming Milestones</h3>
-
-            <div class="badge-card">
-              <img src="https://assets.tryhackme.com/img/badges/iacsecurity.png" alt="iac security badge" />
-              <span>iac security</span>
-            </div>
-
-            <div class="badge-card">
-              <img src="https://assets.tryhackme.com/img/badges/securityinthepipeline.png" alt="security in the pipeline badge" />
-              <span>security in the pipeline</span>
-            </div>
-
-            <div class="badge-card">
-              <img src="https://assets.tryhackme.com/img/badges/managingincidents.png" alt="managing incidents badge" />
-              <span>managing incidents</span>
-            </div>
-
-            <div class="badge-card">
-              <img src="https://assets.tryhackme.com/img/badges/networkandsystemsecurity.png" alt="network and system security badge" />
-              <span>network &amp; system security</span>
-            </div>
-
-            <div class="badge-card">
-              <img src="https://assets.tryhackme.com/img/badges/introtodevsecops.png" alt="intro to devsecops badge" />
-              <span>intro to devsecops</span>
-            </div>
-
-            <div class="badge-card">
-              <img src="https://assets.tryhackme.com/img/badges/shieldapprentice.png" alt="shield apprentice badge" />
-              <span>shield apprentice</span>
-            </div>
-
-            <!-- Red Teaming -->
-            <h3 class="badge-section-label">TryHackMe · Red Teaming Milestones</h3>
-
-            <div class="badge-card">
-              <img src="https://assets.tryhackme.com/img/badges/metasploit.png" alt="metasploit badge" />
-              <span>metasploit</span>
-            </div>
-
-            <div class="badge-card">
-              <img src="https://assets.tryhackme.com/img/badges/owasptop10.png" alt="owasp top 10 badge" />
-              <span>owasp top 10</span>
-            </div>
-
-            <div class="badge-card">
-              <img src="https://assets.tryhackme.com/img/badges/blue.png" alt="blue badge" />
-              <span>blue (eternalblue)</span>
-            </div>
-
-            <div class="badge-card">
-              <img src="https://assets.tryhackme.com/img/badges/softwaresecurity.png" alt="software security badge" />
-              <span>software security</span>
-            </div>
-
-            <!-- Foundations -->
-            <h3 class="badge-section-label">TryHackMe · Foundations Milestones</h3>
-
-            <div class="badge-card">
-              <img src="https://assets.tryhackme.com/img/badges/networkfundamentals.png" alt="network fundamentals badge" />
-              <span>network fundamentals</span>
-            </div>
-
-            <div class="badge-card">
-              <img src="https://assets.tryhackme.com/img/badges/howthewebworks.png" alt="how the web works badge" />
-              <span>how the web works</span>
-            </div>
-
-            <div class="badge-card">
-              <img src="https://assets.tryhackme.com/img/badges/webbed.png" alt="webbed badge" />
-              <span>webbed</span>
-            </div>
-
-            <div class="badge-card">
-              <img src="https://assets.tryhackme.com/img/badges/linux.png" alt="linux badge" />
-              <span>linux (cat linux.txt)</span>
-            </div>
-
-            <div class="badge-card">
-              <img src="https://assets.tryhackme.com/img/badges/swordapprentice.png" alt="sword apprentice badge" />
-              <span>sword apprentice</span>
-            </div>
-
-            <div class="badge-card">
-              <img src="https://assets.tryhackme.com/img/badges/careerready.png" alt="cyber ready badge" />
-              <span>cyber ready</span>
-            </div>
-
-            <!-- Misc -->
-            <h3 class="badge-section-label">TryHackMe · Miscellaneous</h3>
-
-            <div class="badge-card">
-              <img src="https://assets.tryhackme.com/img/badges/threatsandrisks.png" alt="threats and risks badge" />
-              <span>threats &amp; risks</span>
-            </div>
-
-            <div class="badge-card">
-              <img src="https://assets.tryhackme.com/img/badges/introtosecurityengineering.png"
-                alt="intro to security engineering badge" />
-              <span>intro to security engineering</span>
-            </div>
-
-            <div class="badge-card">
-              <img src="https://assets.tryhackme.com/img/badges/hack2win.png" alt="hack2win badge" />
-              <span>hack2win 2025</span>
-            </div>
-
-            <!-- Hack The Box -->
-            <h3 class="badge-section-label">Hack The Box · Module Badges</h3>
-
-            <div class="badge-card">
-              <a href="https://academy.hackthebox.com/achievement/badge/82e30b54-14b2-11f0-864f-bea50ffe6cb4"
-                target="_blank" rel="noreferrer">
-                <img src="https://academy.hackthebox.com/storage/badges/academician.png"
-                    alt="HTB badge - Academician" />
-                <span>Academician · Introduction to Academy</span>
-              </a>
-            </div>
-
-            <div class="badge-card">
-              <a href="https://academy.hackthebox.com/achievement/badge/36868ee7-f0ee-11f0-9254-bea50ffe6cb4"
-                target="_blank" rel="noreferrer">
-                <img src="https://academy.hackthebox.com/storage/badges/19bee749eaa26dce0829ad89ab2b2678/logo.png"
-                    alt="HTB badge - Cyber starter" />
-                <span>Cyber starter · Intro to Information Security</span>
-              </a>
-            </div>
-
-            <div class="badge-card">
-              <a href="https://academy.hackthebox.com/achievement/badge/6b34f328-f30a-11f0-9254-bea50ffe6cb4"
-                target="_blank" rel="noreferrer">
-                <img src="https://academy.hackthebox.com/storage/badges/cdf6a85ad770099681ddb3f12796c52a/logo.png"
-                    alt="HTB badge - Solid basis" />
-                <span>Solid basis · Network Foundations</span>
-              </a>
-            </div>
-          </section>
-        </div>
+  <header class="top">
+    <div class="identity">
+      <img class="avatar" src="img/avatar.jpeg" alt="Foto de Anna Laura Kamimura" />
+      <div>
+        <h1>Anna Laura Kamimura</h1>
+        <p class="role">analista de sistemas</p>
+        <p class="kana">かみむら</p>
       </div>
     </div>
+    <p class="lede">
+      Uno desenvolvimento e segurança para deixar o caminho até a produção mais curto e mais seguro.
+    </p>
+    <nav class="links" aria-label="contato">
+      <a href="https://github.com/Aninhaskm" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/annakamimura" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href="mailto:annalauraskamimura@gmail.com">E-mail</a>
+    </nav>
+  </header>
 
-    <footer class="foot">
-      <p>&copy; <span id="year"></span> Anna Laura Kamimura. All rights reserved.</p>
-    </footer>
-  </main>
+  <section class="now" id="agora">
+    <h2>agora</h2>
+    <p>
+      Analista de sistemas, formada em Análise e Desenvolvimento de Sistemas.
+      Trabalho com automação, pipeline e segurança no caminho até a produção, com foco em cibersegurança e DevSecOps.
+      Estou cursando pós-graduação em Segurança da Informação e em Arquitetura e Projetos de Cloud,
+      e aprofundando AWS e Google Cloud.
+    </p>
+  </section>
 
-  <!-- JS principal -->
+  <div class="split">
+    <section id="projetos">
+      <h2>projetos</h2>
+      <ul class="projects">
+        <li>
+          <h3>organograma</h3>
+          <p>Consulta visual da estrutura e das pessoas de cada área.</p>
+          <p class="tech">Next.js · Python · FastAPI · PostgreSQL</p>
+        </li>
+        <li>
+          <h3>indicadores de ameaça</h3>
+          <p>API que reúne os indicadores e entrega só o agregado ao time e aos painéis.</p>
+          <p class="tech">Python · FastAPI · PostgreSQL · Docker</p>
+        </li>
+        <li>
+          <h3>mensagens no Teams</h3>
+          <p>API para enviar avisos e abrir conversas no Microsoft Teams.</p>
+          <p class="tech">Python · FastAPI</p>
+        </li>
+        <li>
+          <h3>painéis de segurança</h3>
+          <p>Telas de incidentes, governança e ameaças para o acompanhamento do dia.</p>
+          <p class="tech">React · TypeScript · Next.js · Node.js</p>
+        </li>
+        <li>
+          <h3>conscientização</h3>
+          <p>Quiz e jogo de reação para os totens do mês de segurança.</p>
+          <p class="tech">HTML · CSS · JavaScript</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>skills</h2>
+      <ul class="skills">
+        <li><h3>languages</h3><p>Python, JavaScript, TypeScript e conceitos de C, Java, C# e C++.</p></li>
+        <li><h3>infra &amp; devops</h3><p>Docker, Git/GitHub, pipelines de CI/CD, automações e fundamentos de cloud.</p></li>
+        <li><h3>security</h3><p>Blue team e red team, OWASP Top 10, DevSecOps, IaC security e resposta a incidentes.</p></li>
+        <li><h3>fundamentals</h3><p>Redes, Linux, como a web funciona, bancos de dados e segurança de software.</p></li>
+        <li><h3>ways of working</h3><p>Scrum, ITIL, documentação e colaboração em time.</p></li>
+      </ul>
+    </section>
+  </div>
+
+  <section class="badges" id="badges">
+    <h2>badges</h2>
+
+    <h3>TryHackMe · learning</h3>
+    <ul>
+      <li><img src="https://assets.tryhackme.com/img/badges/streak30.png" alt="" /><span>30 day streak</span></li>
+      <li><img src="https://assets.tryhackme.com/img/badges/firstfour.png" alt="" /><span>first four rooms</span></li>
+      <li><img src="https://assets.tryhackme.com/img/badges/streak7.png" alt="" /><span>7 day streak</span></li>
+      <li><img src="https://assets.tryhackme.com/img/badges/streak3.png" alt="" /><span>3 day streak</span></li>
+      <li><img src="https://assets.tryhackme.com/img/badges/league-silver.png" alt="" /><span>silver league</span></li>
+    </ul>
+
+    <h3>TryHackMe · blue team</h3>
+    <ul>
+      <li><img src="https://assets.tryhackme.com/img/badges/iacsecurity.png" alt="" /><span>iac security</span></li>
+      <li><img src="https://assets.tryhackme.com/img/badges/securityinthepipeline.png" alt="" /><span>security in the pipeline</span></li>
+      <li><img src="https://assets.tryhackme.com/img/badges/managingincidents.png" alt="" /><span>managing incidents</span></li>
+      <li><img src="https://assets.tryhackme.com/img/badges/networkandsystemsecurity.png" alt="" /><span>network &amp; system security</span></li>
+      <li><img src="https://assets.tryhackme.com/img/badges/introtodevsecops.png" alt="" /><span>intro to devsecops</span></li>
+      <li><img src="https://assets.tryhackme.com/img/badges/shieldapprentice.png" alt="" /><span>shield apprentice</span></li>
+    </ul>
+
+    <h3>TryHackMe · red team</h3>
+    <ul>
+      <li><img src="https://assets.tryhackme.com/img/badges/metasploit.png" alt="" /><span>metasploit</span></li>
+      <li><img src="https://assets.tryhackme.com/img/badges/owasptop10.png" alt="" /><span>owasp top 10</span></li>
+      <li><img src="https://assets.tryhackme.com/img/badges/blue.png" alt="" /><span>blue</span></li>
+      <li><img src="https://assets.tryhackme.com/img/badges/softwaresecurity.png" alt="" /><span>software security</span></li>
+    </ul>
+
+    <h3>TryHackMe · foundations</h3>
+    <ul>
+      <li><img src="https://assets.tryhackme.com/img/badges/networkfundamentals.png" alt="" /><span>network fundamentals</span></li>
+      <li><img src="https://assets.tryhackme.com/img/badges/howthewebworks.png" alt="" /><span>how the web works</span></li>
+      <li><img src="https://assets.tryhackme.com/img/badges/webbed.png" alt="" /><span>webbed</span></li>
+      <li><img src="https://assets.tryhackme.com/img/badges/linux.png" alt="" /><span>linux</span></li>
+      <li><img src="https://assets.tryhackme.com/img/badges/swordapprentice.png" alt="" /><span>sword apprentice</span></li>
+      <li><img src="https://assets.tryhackme.com/img/badges/careerready.png" alt="" /><span>cyber ready</span></li>
+    </ul>
+
+    <h3>TryHackMe · outros</h3>
+    <ul>
+      <li><img src="https://assets.tryhackme.com/img/badges/threatsandrisks.png" alt="" /><span>threats &amp; risks</span></li>
+      <li><img src="https://assets.tryhackme.com/img/badges/introtosecurityengineering.png" alt="" /><span>security engineering</span></li>
+      <li><img src="https://assets.tryhackme.com/img/badges/hack2win.png" alt="" /><span>hack2win 2025</span></li>
+    </ul>
+
+    <h3>Hack The Box</h3>
+    <ul>
+      <li>
+        <a href="https://academy.hackthebox.com/achievement/badge/82e30b54-14b2-11f0-864f-bea50ffe6cb4" target="_blank" rel="noreferrer">
+          <img src="https://static.hackthebox.com/academy/badges/academician.png" alt="" />
+          <span>Academician</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://academy.hackthebox.com/achievement/badge/36868ee7-f0ee-11f0-9254-bea50ffe6cb4" target="_blank" rel="noreferrer">
+          <img src="https://static.hackthebox.com/academy/badges/19bee749eaa26dce0829ad89ab2b2678/logo.png" alt="" />
+          <span>Cyber starter</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://academy.hackthebox.com/achievement/badge/6b34f328-f30a-11f0-9254-bea50ffe6cb4" target="_blank" rel="noreferrer">
+          <img src="https://static.hackthebox.com/academy/badges/cdf6a85ad770099681ddb3f12796c52a/logo.png" alt="" />
+          <span>Solid basis</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Anna Laura Kamimura</p>
+  </footer>
+
   <script src="js/main.js"></script>
 </body>
-
 </html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Estudos · Anna</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/png" href="img/favicon_kamimura_bigger.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600&family=Syne:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/estudos.css" />
+</head>
+<body>
+  <header class="study-top">
+    <div>
+      <p class="kana">uso pessoal</p>
+      <h1>Estudos</h1>
+    </div>
+    <p class="lede">Checks e cronômetro ficam só neste navegador.</p>
+  </header>
+
+  <section class="deadlines" aria-label="contagem para as provas">
+    <article>
+      <p class="exam-kicker">AIF-C01</p>
+      <p class="exam-count" data-at="2026-12-15T15:15:00-03:00">15 dez · 15h15</p>
+      <p class="exam-note">AWS AI Practitioner · UNICIT</p>
+    </article>
+    <article>
+      <p class="exam-kicker">CLF-C02</p>
+      <p class="exam-count" data-at="2026-12-28T15:15:00-03:00">28 dez · 15h15</p>
+      <p class="exam-note">AWS Cloud Practitioner · UNICIT</p>
+    </article>
+    <article>
+      <p class="exam-kicker">ACE</p>
+      <p class="exam-count" data-at="2027-01-31T23:59:59-03:00">31 jan</p>
+      <p class="exam-note">meta do badge · Google Cloud</p>
+    </article>
+  </section>
+
+  <section class="metrics" id="metrics" aria-label="meta e cumprimento"></section>
+
+  <section class="board">
+    <div class="today">
+      <p class="study-phase" id="study-phase"></p>
+      <p class="study-kicker" id="study-kicker">hoje</p>
+      <h2 class="study-today-title" id="study-today-title"></h2>
+      <p class="study-today-detail" id="study-today-detail"></p>
+      <p class="timer-clock" id="timer-clock">00:00:00</p>
+      <div class="timer-actions">
+        <button type="button" id="timer-start">iniciar</button>
+        <button type="button" id="timer-pause" disabled>pausar</button>
+        <button type="button" id="timer-reset">zerar</button>
+      </div>
+      <p class="timer-meta" id="timer-meta"></p>
+      <div class="timer-bar" id="timer-bar" hidden>
+        <div class="timer-bar-fill" id="timer-fill"></div>
+      </div>
+    </div>
+    <div class="week">
+      <h2>semanas</h2>
+      <div id="weeks"></div>
+    </div>
+  </section>
+
+  <script src="js/estudos.js"></script>
+</body>
+</html>
